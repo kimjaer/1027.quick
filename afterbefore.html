@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+  }
+
+
+  ul>li:nth-child(1):before{
+    content: "1";
+  }
+
+  ul>li:nth-child(2):before{
+    content: "2";
+  }
+
+  ul>li:nth-child(3):before{
+    content: "3";
+  }
+/*  가운데로 보내기
+  ul {
+    font-size: 5rem;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    display: flex;
+    position: fixed;
+    justify-content: center;
+    align-items: center;
+  } */
+  /* #thumb{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%)
+  } */
+
+  /* ul{
+    right: 50%;
+    bottom: 50%;
+    transform: translate(-50%,-50%);
+  } */
+
+  body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  ul {
+    font-size: 5rem;
+    width: 50vw;
+    height: 5rem;
+    background-color: yellow;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  }
+
+  li {
+    list-style: none;
+  }
+
+
+
+
+
+
+
+</style>
+
+<body>
+  <ul id="thumb">
+    <li></li>
+    <li></li>
+    <li></li>
+  </ul>
+</body>
+</html>
